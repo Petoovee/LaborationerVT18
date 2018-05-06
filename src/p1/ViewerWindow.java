@@ -13,16 +13,16 @@ public class ViewerWindow {
 		frame.setLayout(new FlowLayout(FlowLayout.CENTER));
 		frame.add(viewer);
 		frame.pack();
-		frame.setLocation(x,y);
+		frame.setLocation(x, y);
 		frame.setVisible(true);
 	}
-	
+
 	// example ViewerWindow, Viewer
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Runnable(){
+		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				Viewer v = new Viewer(600,400);
-				ViewerWindow window = new ViewerWindow(v,50,100);
+				Viewer v = new Viewer(600, 400);
+				ViewerWindow window = new ViewerWindow(v, 50, 100);
 				v.setIcon(new ImageIcon("images/orkanen.jpg"));
 			}
 		});

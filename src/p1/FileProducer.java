@@ -3,10 +3,10 @@ package p1;
 import javax.swing.Icon;
 
 public class FileProducer implements IconProducer {
-	
+
 	public FileProducer(String filename) {
 	}
-	
+
 	public int delay() {
 		return 0;
 	}
