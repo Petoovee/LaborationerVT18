@@ -5,7 +5,7 @@ import javax.swing.Icon;
 /**
  * This class acts as a @Thread that takes in an arraylist of 
  * Icon objects and IconProducer objects.
- * @author UncleBen
+ * @author Petar Nov
  *
  */
 public class Producer extends Thread {

@@ -11,7 +11,7 @@ import javax.swing.Icon;
 /**
  * @IconServer is used to start up a server with any given IP and Port and let @IconClient to connect 
  * and receive Icon objects through the @ObjectOutputStream
- * @author UncleBen
+ * @author Petar Nov
  *
  */
 public class IconServer implements Runnable {
@@ -53,7 +53,7 @@ public class IconServer implements Runnable {
 	 * Private class that handles the clients that connect to the server.
 	 * Once a client has connected the @IconManager will start notifying @Icon
 	 * Objects to this @Observer and use the @ObjectOutputStream to send the data.
-	 * @author UncleBen
+	 * @author Petar Nov
 	 *
 	 */
 	private class ClientHandler extends Thread implements Observer {

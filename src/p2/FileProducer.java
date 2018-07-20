@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
  * A class that implements the IconProducer
  * It is used to take in a file and read it and make an IconList with all the icons.
  * Also reads the repeat sequence and delay that is also in the text file.
- * @author UncleBen
+ * @author Petar Nov
  *
  */
 public class FileProducer implements IconProducer {

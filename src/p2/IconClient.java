@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import javax.swing.Icon;
 /**
  * Client side that takes in Icon objects from the @IconServer and displays it on the P2Viewer using Callback.
- * @author UncleBen
+ * @author Petar Nov
  *
  */
 public class IconClient implements Runnable {
