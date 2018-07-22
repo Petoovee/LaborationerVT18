@@ -8,10 +8,12 @@ import java.util.ArrayList;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+
 /**
- * A class that implements the IconProducer
- * It is used to take in a file and read it and make an IconList with all the icons.
- * Also reads the repeat sequence and delay that is also in the text file.
+ * A class that implements the IconProducer It is used to take in a file and
+ * read it and make an IconList with all the icons. Also reads the repeat
+ * sequence and delay that is also in the text file.
+ * 
  * @author Petar Nov
  *
  */
@@ -20,10 +22,13 @@ public class FileProducer implements IconProducer {
 	private int size;
 	private int index = 0;
 	ArrayList<Icon> iconList = new ArrayList<Icon>();
+
 	/**
-	 * Constructor that takes in the file path and reads that file to then save it in the 
-	 * instance variables.
-	 * @param filename File Path.
+	 * Constructor that takes in the file path and reads that file to then save it
+	 * in the instance variables.
+	 * 
+	 * @param filename
+	 *            File Path.
 	 */
 	public FileProducer(String filename) {
 		try {
@@ -41,6 +46,7 @@ public class FileProducer implements IconProducer {
 		}
 
 	}
+
 	/**
 	 * @return The delay value from the file.
 	 */

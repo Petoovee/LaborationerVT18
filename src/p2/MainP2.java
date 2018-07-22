@@ -1,9 +1,6 @@
 package p2;
 
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
-
-import p2.*;
 
 public class MainP2 {
 	public static void main(String[] args) {

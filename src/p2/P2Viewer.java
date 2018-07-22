@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 public class P2Viewer extends JPanel implements Callback {
 	private IconClient client;
 	private JLabel lblIcon = new JLabel();
-	
+
 	public P2Viewer(IconClient client, int width, int height) {
 		this.client = client;
 		client.addCallback(this);
@@ -19,10 +19,11 @@ public class P2Viewer extends JPanel implements Callback {
 		add(lblIcon);
 		setPreferredSize(new Dimension(width, height));
 	}
-	
+
 	public void setIcon(Icon icon) {
 		lblIcon.setIcon(icon);
 	}
+
 	public void notify(Icon icon) {
 		setIcon(icon);
 	}

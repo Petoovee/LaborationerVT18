@@ -11,13 +11,14 @@ import javax.swing.JPanel;
 
 public class Viewer extends JPanel implements Observer {
 	private JLabel lblIcon = new JLabel();
-	
+
 	public Viewer(int width, int height) {
 		setLayout(new FlowLayout(FlowLayout.CENTER));
 		lblIcon.setOpaque(true);
 		add(lblIcon);
-		setPreferredSize(new Dimension(width,height));
+		setPreferredSize(new Dimension(width, height));
 	}
+
 	public Viewer(IconManager iconManager, int width, int height) {
 		this(width, height);
 		iconManager.addObserver(this);
@@ -26,9 +27,10 @@ public class Viewer extends JPanel implements Observer {
 	public void setIcon(Icon icon) {
 		lblIcon.setIcon(icon);
 	}
+
 	@Override
 	public void update(Observable o, Object arg) {
-		if(arg instanceof Icon)
-			setIcon((Icon)arg);
+		if (arg instanceof Icon)
+			setIcon((Icon) arg);
 	}
 }
