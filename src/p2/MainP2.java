@@ -12,7 +12,7 @@ public class MainP2 {
 		new ViewerWindow(new Viewer(iconManager, 320, 320), 450, 100);
 
 		IconServer iconServer = new IconServer(iconManager, 3520); // start av server
-		IconClient iconClient1 = new IconClient("127.0.0.1", 3521); // start av client1
+		IconClient iconClient1 = new IconClient("127.0.0.1", 3520); // start av client1
 		new ViewerWindow(new P2Viewer(iconClient1, 320, 320), 100, 450);
 		new ViewerWindow(new P2Viewer(iconClient1, 320, 320), 450, 450);
 		IconClient iconClient2 = new IconClient("127.0.0.1", 3520); // start av client2

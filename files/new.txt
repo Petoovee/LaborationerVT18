@@ -1,4 +1,4 @@
-2
+5
 50
 images/new1.jpg
 images/new2.jpg
